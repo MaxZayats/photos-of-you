@@ -1,12 +1,12 @@
 def modify(user_template_name, base_template_name, main_template_name):
-    """Фунция модифицирует шаблон main_template_name.
+    """The function modifies the "main_template_name" template.
 
-    В main_template_name добавляется скрипт и пользовательский шаблон.
+    A script and a custom template are added to the "main_template_name" template.
 
     """
-    user_template = open('templates/'+user_template_name, 'r')
-    base_template = open('templates/'+base_template_name, 'r')
-    main_template = open('templates/'+main_template_name, 'w')
+    user_template = open('server/templates/'+user_template_name, 'r')
+    base_template = open('server/templates/'+base_template_name, 'r')
+    main_template = open('server/templates/'+main_template_name, 'w')
 
     main_template.write(
         user_template.read() + base_template.read()
