@@ -27,7 +27,7 @@ def start():
 def main():
     imgdata = base64.b64decode(request.form.to_dict().get('img'))
     filename = f'{datetime.datetime.now().strftime("%d-%m-%Y %H-%M-%S")}.jpg'
-    with open(r"server/photos/" + filename, 'wb') as f:
+    with open(r"photos/" + filename, 'wb') as f:
         f.write(imgdata)
     return redirect('/')
 
