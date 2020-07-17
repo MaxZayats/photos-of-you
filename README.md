@@ -18,5 +18,5 @@
      and others...<br>
 2. You can change the template "**template.html**" to your template.
 3. Run "app.py"<br>
-   ```python app.py```
+   ```python3 app.py```
 4. The photos will be saved in the "photos" folder.
